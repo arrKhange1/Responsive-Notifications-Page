@@ -1,0 +1,17 @@
+@use '../abstract';
+
+.button {
+    padding: 0.85em 1.5em;
+    color: abstract.func-clr(abstract.$color-home-colors, off-white);
+    background-color: abstract.func-clr(abstract.$color-home-colors, soft-red);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border: none;
+    transition: background-color 250ms ease-out;
+
+    &:hover {
+        cursor: pointer;
+        background-color: abstract.func-clr(abstract.$color-home-colors, very-dark-blue);
+    }
+}
+

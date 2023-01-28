@@ -1,0 +1,41 @@
+.header {
+
+    margin-top: 3em;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__burger {
+        width: 36px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    &__burger--disabled {
+        display: none;
+    }
+
+
+    &__logo {
+        width: 36px;
+        height: 24px;
+    }
+
+    @media (min-width: 850px) {
+        &__burger {
+            display: none;
+        }
+
+        &__logo {
+            width: 48px;
+            height: 36px;
+        }
+        
+    }
+}
+
+
+

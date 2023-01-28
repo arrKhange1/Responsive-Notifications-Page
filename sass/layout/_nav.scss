@@ -1,0 +1,78 @@
+@use '../abstract';
+
+.nav {
+
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 75%;
+    background-color: white;
+    opacity: 0.9;
+    height: 100%;
+    font-size: 1.2rem;
+
+    &__list {
+        margin: 6rem 0 0 1.5rem;
+    }
+
+    &__list-item + &__list-item {
+        margin-top: 1rem;
+    }
+
+    &--disabled {
+        visibility: hidden;
+        height: 0;
+    }
+
+    &__close {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        top: 0.8em;
+        right: 0.5em;
+        cursor: pointer;
+    }
+
+    &__link {
+        color: abstract.func-clr(abstract.$color-home-colors, very-dark-blue);
+        @include abstract.mixin-hover-text(
+            abstract.func-clr(abstract.$color-home-colors, soft-red)
+        );
+    }
+
+
+    @media (min-width: 850px) {
+        
+        & {
+            position: relative;
+            visibility: visible;
+            height: auto;
+            width: auto;
+        }
+
+        &__list {
+            margin: 0;
+            display: flex;
+        }
+
+        &__list-item + &__list-item {
+            margin: 0;
+            margin-left: 1rem;
+        }
+
+        
+        &__close {
+            display: none;
+        }
+
+        &__link {
+            font-size: 0.9rem;
+            color: abstract.func-clr(abstract.$color-home-colors, dark-grayish-blue);
+        }
+
+      
+
+    }
+
+}
+

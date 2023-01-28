@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Inter', sans-serif;
+    src: url(../../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+$default-fs: 15px;
+
+$font-stack: (
+    inter: (
+        regular: (
+            family: (Inter, sans-serif),
+            weight: 400,
+            style: normal
+        ),
+        bold: (
+            family: (Inter, sans-serif),
+            weight: 600,
+            style: normal
+        ),
+        extra-bold: (
+            family: (Inter, sans-serif),
+            weight: 800,
+            style: normal
+        ),
+    )
+)

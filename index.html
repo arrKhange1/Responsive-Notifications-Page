@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__container">
+      <img class="header__logo" src="./assets/images/logo.svg" alt="Logo">
+      <nav class="nav nav--disabled">
+        <svg class="nav__close" xmlns="http://www.w3.org/2000/svg"  class="bi bi-x-lg" viewBox="0 0 16 16">
+          <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+        </svg>
+        <ul class="nav__list">
+          <li class="nav__list-item"><a href="" class="nav__link">Home</a></li>
+          <li class="nav__list-item"><a href="" class="nav__link">New</a></li>
+          <li class="nav__list-item"><a href="" class="nav__link">Popular</a></li>
+          <li class="nav__list-item"><a href="" class="nav__link">Trending</a></li>
+          <li class="nav__list-item"><a href="" class="nav__link">Categories</a></li>
+        </ul>
+      </nav>
+      <svg class="header__burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+      </svg>
+    </div>
+  </header>
+
+  <main class="news">
+    <div class="container news__container">
+      <img class="news__img-mobile" src="./assets/images/image-web-3-mobile.jpg" alt="Web3">
+      <img class="news__img-desktop" src="./assets/images/image-web-3-desktop.jpg" alt="Web3">
+      <h1 class="title news__title">The Bright Future of Web 3.0?</h1>
+      <section class="news__textbox">
+        <p class="text text--grayish">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+          But is it really fulfilling its promise?</p>
+        <button class="button" type="button">Read more</button>
+      </section>
+      <aside class="news__hot">
+          <h2 class="title news__hot-title">New</h2>
+          <section class="news__hot-blogs">
+            <article class="news__blog">
+              <h3 class="title news__blog-title title--white">Hydrogen VS Electric Cars</h3>
+              <p class="text news__blog-text text--white text--transparent">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </article>
+            <hr class="news__blog-delimiter">
+            <article class="news__blog">
+              <h3 class="title news__blog-title title--white">Hydrogen VS Electric Cars</h3>
+              <p class="text news__blog-text text--white text--transparent">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </article>
+            <hr class="news__blog-delimiter">
+            <article class="news__blog">
+              <h3 class="title news__blog-title title--white">Hydrogen VS Electric Cars</h3>
+              <p class="text news__blog-text text--white text--transparent">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </article>
+          </section>
+      </aside>
+    </div>
+  </main>
+
+  <section class="blogs">
+    <div class="container blogs__container">
+      <section class="blogs__blog">
+        <img class="blogs__img" src="./assets/images/image-retro-pcs.jpg" alt="Retro PC">
+        <article class="blogs__textbox">
+          <h4 class="title blogs__blog-title">Reviving Retro PCs</h4>
+          <p class="text blogs__blog-text text--grayish">What happens when old PCs are given modern upgrades?</p>
+        </article>
+      </section>
+      <section class="blogs__blog">
+        <img class="blogs__img" src="./assets/images/image-top-laptops.jpg" alt="Gaming keyboard">
+        <article class="blogs__textbox">
+          <h4 class="title blogs__blog-title">Top 10 Laptops of 2022</h4>
+          <p class="text blogs__blog-text text--grayish">Our best picks for various needs and budgets.</p>
+        </article>
+      </section>
+      <section class="blogs__blog">
+        <img class="blogs__img" src="./assets/images/image-gaming-growth.jpg" alt="Thrown up joistik">
+        <article class="blogs__textbox">
+          <h4 class="title blogs__blog-title ">The Growth of Gaming</h4>
+          <p class="text blogs__blog-text text--grayish">How the pandemic has sparked fresh opportunities.</p>
+        </article>
+      </section>
+    </div>
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">arrKhange1</a>.
+  </div>
+
+  <script src="js/toggle.js"></script>
+</body>
+</html>

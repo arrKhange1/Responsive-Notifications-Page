@@ -1,0 +1,17 @@
+@use 'sass:list';
+@use 'colors';
+
+@function clr($clr-map, $clr) {
+    $color: map-get($clr-map, $clr);
+    @return $color;
+}
+
+@function font-props($font-stack, $group, $variant) {
+    $font-props: map-get(map-get($font-stack, $group), $variant);
+    @return $font-props;
+}
+
+@function contain-prop($properties, $property) {
+    $contain-prop: list.index($properties, $property);
+    @return $contain-prop;
+}
