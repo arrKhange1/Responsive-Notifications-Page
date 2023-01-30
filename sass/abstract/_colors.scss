@@ -15,3 +15,5 @@ $home-colors: (
     dark-grayish-blue:  $dark-grayish-blue,
     very-dark-blue: $very-dark-blue
 )
+
+// select a color: abstract.func-clr(abstract.$color-home-colors, very-dark-blue)
