@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
 
-    @include mixins.font(inter);
+    @include mixins.font(jakarta, medium);
     font-size: typ.$default-fs;
 }
 
@@ -30,4 +30,13 @@ a {
 
 hr {
     margin: 0;
+}
+
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
 }

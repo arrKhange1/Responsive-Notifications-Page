@@ -1,0 +1,18 @@
+@use '../abstract/colors';
+@use '../abstract/mixins';
+
+.accent-color {
+    @include mixins.font(jakarta, bold, weight);
+}
+
+.accent-color--black {
+    color: colors.$very-dark-blue;
+}
+
+.accent-color--gray {
+    color: colors.$dark-grayish-blue;
+}
+
+.accent-color--blue {
+    color: colors.$blue;
+}

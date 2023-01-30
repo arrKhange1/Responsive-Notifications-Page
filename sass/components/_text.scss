@@ -3,14 +3,11 @@
 
 .text {
     &--white {
-        color: abstract.func-clr(abstract.$color-home-colors, off-white);
     }
 
     &--transparent {
-        color: abstract.func-clr(abstract.$color-home-colors, off-white-transparent);
     }
 
     &--grayish {
-        color: abstract.func-clr(abstract.$color-home-colors, dark-grayish-blue);
     }
 }

@@ -1,9 +1,8 @@
-@use '../abstract';
+@use '../abstract/colors';
 
 .title {
-    @include abstract.mixin-font(inter, extra-bold, weight);
 
     &--white {
-        color: abstract.func-clr(abstract.$color-home-colors, off-white);
+        
     }
 }
