@@ -19,28 +19,28 @@
   <section class="notifications">
     <div class="container">
       <section class="notifications__top">
-        <h2 class="notifications__title">Notifications</h2>
+        <h2 class="notifications__title" data-notification-cnt="0">Notifications</h2>
         <button class="notifications__mark-unread">Mark all as read</button>
       </section>
       <ul class="notifications__list">
-        <li class="notifications__list-item">
+        <li class="notifications__list-item notifications__list-item--unread">
           <img class="notifications__avatar" src="./assets/images/avatar-mark-webber.webp" alt="Avatar">
           <article class="notifications__notification">
-            <p class="notifications__text"><span class="accent-color accent-color--black">Mark Webber </span>reacted to your recent post <span class="accent-color">My first tournament today!</span></p>
+            <p class="notifications__text notifications__text--unread"><span class="accent-color accent-color--black">Mark Webber </span>reacted recent post <span class="accent-color">My first tournament today!</span></p>
             <p class="notifications__time">1m ago</p>
           </article>
         </li>
-        <li class="notifications__list-item">
+        <li class="notifications__list-item notifications__list-item--unread">
           <img class="notifications__avatar" src="./assets/images/avatar-angela-gray.webp" alt="Avatar">
           <article class="notifications__notification">
-            <p class="notifications__text"><span class="accent-color accent-color--black">Angela Gray </span> followed you</p>
+            <p class="notifications__text notifications__text--unread"><span class="accent-color accent-color--black">Angela Gray </span> followed you</p>
             <p class="notifications__time">5m ago</p>
           </article>
         </li>
-        <li class="notifications__list-item">
+        <li class="notifications__list-item notifications__list-item--unread">
           <img class="notifications__avatar" src="./assets/images/avatar-jacob-thompson.webp" alt="Avatar">
           <article class="notifications__notification">
-            <p class="notifications__text"><span class="accent-color accent-color--black">Jacob Thompson </span> has joined your group <span class="accent-color accent-color--blue">Chess Club</span></p>
+            <p class="notifications__text notifications__text--unread"><span class="accent-color accent-color--black">Jacob Thompson </span> has joined your group <span class="accent-color accent-color--blue">Chess Club</span></p>
             <p class="notifications__time">1 day ago</p>
           </article>
         </li>
@@ -83,5 +83,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">arrKhange1</a>.
   </div>
+
+  <script src="./js/notifications-counter.js"></script>
 </body>
 </html>

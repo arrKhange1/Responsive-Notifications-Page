@@ -13,10 +13,8 @@
     }
   }
 
-@mixin hover-text($color) {
-  &:hover {
-    cursor: pointer;
-    transition: color 250ms ease-out;
-    color: $color;
+@mixin hover-text() {
+  &:hover, &:focus {
+    @content;
   }
 }

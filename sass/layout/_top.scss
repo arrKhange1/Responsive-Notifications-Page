@@ -22,11 +22,14 @@
     &__mark-unread {
         color: colors.$dark-grayish-blue;
         white-space: nowrap;
+        @include mixins.hover-text() {
+            cursor: pointer;
+        }
     }
 
     &__title::after {
         // get number from data attribute
-        content: '3'; 
+        content: attr(data-notification-cnt); 
         margin-left: 10px;
         display: flex;
         justify-content: center;
